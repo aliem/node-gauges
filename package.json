@@ -1,0 +1,17 @@
+{
+  "name": "gauges",
+  "version": "1.0.0",
+  "description": "A stupid StatsD client",
+  "main": "index.js",
+  "engines": {
+    "node": "^5.5.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "author": "Lorenzo Giuliani",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.4.0"
+  }
+}
