@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A stupid StatsD client",
   "main": "index.js",
+  "repository": "https://github.com/aliem/node-gauges.git",
   "engines": {
     "node": "^5.5.0"
   },
