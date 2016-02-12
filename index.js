@@ -4,8 +4,8 @@
 /*
  * needed constants
  */
-const STATSD_PORT = exports.PORT = process.env.STATSD_PORT;
-const STATSD_HOST = exports.HOST = process.env.STATSD_HOST;
+exports.PORT = process.env.STATSD_PORT;
+exports.HOST = process.env.STATSD_HOST;
 
 const dgram = require('dgram');
 const socket = dgram.createSocket('udp4');
