@@ -11,8 +11,7 @@ g.PORT = 8125;
 h.HOST = 'localhost';
 
 // single message
-g.counter('ducks', 2)
-    .catch((err) => console.error('Error received!', err));
+g.counter('ducks', 2);
 
 // multi
 const multi = g.multi('server');
@@ -25,14 +24,15 @@ multi
     .set('query', 'get_all_ducks')
     .set('query', 'get_all_cows');
     
-multi.send()
-    .catch((err) => console.error('Error received', err))
+multi.send();
 ```
 
 API
 ===
 
-All direct methods are promises. [Reference](https://github.com/etsy/statsd/blob/master/docs/metric_types.md)
+Mirrors StatsD API. [Reference](https://github.com/etsy/statsd/blob/master/docs/metric_types.md)
+
+> NOTE: all commands also send the corresponding UDP packet to StatsD
 
 - `#counter(key, value)`
 - `#gauge(key, value)`
@@ -44,4 +44,4 @@ All direct methods are promises. [Reference](https://github.com/etsy/statsd/blob
 Sends multi-metric packets. [Reference](https://github.com/etsy/statsd/blob/master/docs/metric_types.md#multi-metric-packets)
 
 - `gauges.multi(prefix)`
-- `#send()` promise
+- `#send()` send the batch command

@@ -42,12 +42,7 @@ exports.send = function send(_data) {
         data = _data;
     }
 
-    return new Promise((resolve, reject) => {
-        socket.send(data, 0, data.length, STATSD_PORT, STATSD_HOST, (err) => {
-            if (err) reject(err);
-            else resolve();
-        });
-    });
+    socket.send(data, 0, data.length, exports.PORT, exports.HOST)
 };
 
 /**
