@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/aliem/node-gauges.git",
   "engines": {
-    "node": "^5.5.0"
+    "node": "^5 || ^6 || ^7"
   },
   "scripts": {
     "test": "tape test.js"
