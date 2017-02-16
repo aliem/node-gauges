@@ -12,6 +12,7 @@
   },
   "author": "Lorenzo Giuliani",
   "license": "ISC",
+  "types": "index.d.ts",
   "devDependencies": {
     "tape": "^4.4.0"
   }
