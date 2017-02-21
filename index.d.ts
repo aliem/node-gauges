@@ -9,7 +9,7 @@ export interface Multi {
     counter(key: string, value: any, flag?: string): Multi;
     set(key: string, value: any, flag?: string): Multi;
 
-    send(data: string): void;
+    send(data?: string): void;
 }
 
 export function keyvalue(key: string, value: any, flag?: string): void;
