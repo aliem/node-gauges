@@ -1,11 +1,11 @@
 {
   "name": "gauges",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A barebone StatsD client",
   "main": "index.js",
   "repository": "https://github.com/aliem/node-gauges.git",
   "engines": {
-    "node": "^5 || ^6 || ^7"
+    "node": ">= 5"
   },
   "scripts": {
     "test": "tape test.js"
